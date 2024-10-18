@@ -63,9 +63,6 @@ function HomePage() {
                         </Card>
                     </motion.Box>
                 </Flex>
-                <Flex>
-
-                </Flex>
             </Flex>
         </ScaleFade>
     )
