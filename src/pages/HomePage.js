@@ -5,10 +5,10 @@ import '../App.jsx';
 function HomePage() {
 
     return (
-        <ScaleFade in={true} initalScale={0} unmountOnExit={true}>
+        <ScaleFade in={true} initalScale={0}>
             <Flex direction="column">
-                <Flex direction="row" padding={6}>
-                    <Flex direction="column" justify="center" align="center" flex={1} padding={5}>
+                <Flex direction="row" padding={18}>
+                    <Flex direction="column" justify="center" align="center" flex={1} padding={5} color="black">
                         <motion.Box whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.03 }}>
                             <Heading size="4xl" pb={5}>Apex Quant</Heading>
                         </motion.Box>
@@ -31,9 +31,9 @@ function HomePage() {
                         </motion.Box>
                     </Flex>
                 </Flex>
-                <Flex direction="row" justify="space-between">
+                <Flex direction="row" justify="space-between" pt={10}>
                     <motion.Box whileHover={{ scale: 1.01 }} whileTap={{ scale: 1.02 }}>
-                        <Card bg="#778ca3" variant="elevated" size="lg">
+                        <Card bg="#4b7bec" variant="elevated" size="lg">
                             <CardBody>
                                 <Flex direction="column" align="center">
                                     <Text fontSize="3xl">22</Text>
@@ -43,7 +43,7 @@ function HomePage() {
                         </Card>
                     </motion.Box>
                     <motion.Box whileHover={{ scale: 1.01 }} whileTap={{ scale: 1.02 }}>
-                        <Card bg="#778ca3" variant="elevated" size="lg">
+                        <Card bg="#4b7bec" variant="elevated" size="lg">
                             <CardBody>
                                 <Flex direction="column" align="center">
                                     <Text fontSize="3xl">3</Text>
@@ -53,7 +53,7 @@ function HomePage() {
                         </Card>
                     </motion.Box>
                     <motion.Box whileHover={{ scale: 1.01 }} whileTap={{ scale: 1.02 }}>
-                        <Card bg="#778ca3" variant="elevated" size="lg">
+                        <Card bg="#4b7bec" variant="elevated" size="lg">
                             <CardBody>
                                 <Flex direction="column" align="center">
                                     <Text fontSize="3xl">8</Text>
