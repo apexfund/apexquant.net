@@ -1,4 +1,4 @@
-import { ChakraProvider, Flex, extendTheme } from '@chakra-ui/react';
+import { ChakraProvider, Flex, color, extendTheme } from '@chakra-ui/react';
 import Main from './pages/Main.js';
 import '@fontsource/oxygen';
 import './App.css';
