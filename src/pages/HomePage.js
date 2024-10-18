@@ -6,16 +6,16 @@ function HomePage() {
 
     return (
         <ScaleFade in={true} initalScale={0}>
-            <Flex direction="column">
+            <Flex direction="column" bg="#d1d8e0">
                 <Flex direction="row" padding={18}>
-                    <Flex direction="column" justify="center" align="center" flex={1} padding={5} color="black">
-                        <motion.Box whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.03 }}>
+                    <Flex direction="column" flex={1} justify="center" align="center" padding={5} color="black">
+                        <motion.Box whileHover={{ skewY: 2 }}>
                             <Heading size="4xl" pb={5}>Apex Quant</Heading>
                         </motion.Box>
-                        <motion.Box whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.03 }}>
+                        <motion.Box whileHover={{ skewY: 2 }}>
                             <Heading size="xl" pb={12}>A Quantitative Finance Club at UMD</Heading>
                         </motion.Box>
-                        <motion.Box whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.03 }}>
+                        <motion.Box whileHover={{ skewY: 2 }}>
                             <Text fontSize="xl">
                                 We are a quantitative finance group at UMD consisting 
                                 of a diverse group of students. Our purpose is to research 
@@ -26,13 +26,13 @@ function HomePage() {
                         </motion.Box>
                     </Flex>
                     <Flex flex={1}>
-                        <motion.Box whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.03 }}>
+                        <motion.Box whileHover={{ skewY: 1.25 }}>
                             <Image src="stockstock.png" borderRadius="full" alt="Stock photo of stocks"/>
                         </motion.Box>
                     </Flex>
                 </Flex>
-                <Flex direction="row" justify="space-between" pt={10}>
-                    <motion.Box whileHover={{ scale: 1.01 }} whileTap={{ scale: 1.02 }}>
+                <Flex direction="row" justify="space-between" p={10}>
+                    <motion.Box whileHover={{ scaleY: 1.02 }}>
                         <Card bg="#4b7bec" variant="elevated" size="lg">
                             <CardBody>
                                 <Flex direction="column" align="center">
@@ -42,7 +42,7 @@ function HomePage() {
                             </CardBody>
                         </Card>
                     </motion.Box>
-                    <motion.Box whileHover={{ scale: 1.01 }} whileTap={{ scale: 1.02 }}>
+                    <motion.Box whileHover={{ scaleY: 1.02 }}>
                         <Card bg="#4b7bec" variant="elevated" size="lg">
                             <CardBody>
                                 <Flex direction="column" align="center">
@@ -52,16 +52,19 @@ function HomePage() {
                             </CardBody>
                         </Card>
                     </motion.Box>
-                    <motion.Box whileHover={{ scale: 1.01 }} whileTap={{ scale: 1.02 }}>
+                    <motion.Box whileHover={{ scaleY: 1.02 }}>
                         <Card bg="#4b7bec" variant="elevated" size="lg">
                             <CardBody>
                                 <Flex direction="column" align="center">
-                                    <Text fontSize="3xl">8</Text>
+                                    <Text fontSize="3xl">X</Text>
                                     <Text fontSize="lg">Years since founding</Text>
                                 </Flex>
                             </CardBody>
                         </Card>
                     </motion.Box>
+                </Flex>
+                <Flex>
+
                 </Flex>
             </Flex>
         </ScaleFade>
