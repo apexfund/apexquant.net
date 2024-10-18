@@ -10,7 +10,7 @@ function Main() {
     return (
         <ScaleFade in={true} initalScale={0}>
             <Flex direction="column">
-                <Tabs variant="unstyled" align="center" height="100vh" width="100vw" size="lg" color="black">
+                <Tabs align="center" height="100vh" width="100%" size="lg" color="black">
                     <TabList>
                         <Tab _selected={{ color: "#45aaf2" }}>Home</Tab>
                         <Tab _selected={{ color: "#45aaf2" }}>Projects</Tab>
