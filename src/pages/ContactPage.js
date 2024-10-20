@@ -5,7 +5,7 @@ function ContactPage() {
 
     return (
         <Box>
-
+            Contact
         </Box>
     )
 }

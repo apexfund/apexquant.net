@@ -1,9 +1,16 @@
-import { ChakraProvider, Flex, color, extendTheme } from '@chakra-ui/react';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import Main from './pages/Main.js';
 import '@fontsource/oxygen';
 import './App.css';
 
 const theme = extendTheme({
+  styles: {
+    global: {
+      body: {
+        backgroundColor: '#d1d8e0',
+      },
+    },
+  },
   fonts: {
     heading: `'Oxygen', sans-serif`,
     body: `'Oxygen', sans-serif`,
@@ -13,9 +20,7 @@ const theme = extendTheme({
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Flex direction="row" height="100vh" width="100%" bg="#d1d8e0">
-        <Main />
-      </Flex>
+      <Main />
     </ChakraProvider>
   );
 }

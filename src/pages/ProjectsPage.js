@@ -1,12 +1,14 @@
-import { Box } from '@chakra-ui/react';
+import { Flex, ScaleFade } from '@chakra-ui/react';
 import '../App.jsx';
 
 function ProjectsPage() {
 
     return (
-        <Box>
-
-        </Box>
+        <ScaleFade in={true} initalScale={0}>
+            <Flex direction="column">
+                Projects
+            </Flex>
+        </ScaleFade>
     )
 }
 

@@ -5,7 +5,7 @@ function MembersPage() {
 
     return (
         <Box>
-
+            Members
         </Box>
     )
 }
