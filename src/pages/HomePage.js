@@ -4,23 +4,25 @@ import { Flex, Heading, Text, ScaleFade, Image, Card, CardBody,
     from '@chakra-ui/react';
 import { ArrowRightIcon } from '@chakra-ui/icons';
 import { motion } from "framer-motion";
-import Footer from '../components/Footer.js';
 import '../App.jsx';
 
 function HomePage() {
+    const ySkew = { skewY: 2 };
+    const yScale = { scaleY: 1.02 };
+    const imageSkew = { skewY: 1.25 };
 
     return (
         <ScaleFade in={true} initalScale={0}>
             <Flex direction="column">
                 <Flex direction="row" p={18}>
                     <Flex direction="column" flex={1} justify="center" align="center" p={5} color="black">
-                        <motion.Box whileHover={{ skewY: 2 }}>
+                        <motion.Box whileHover={ySkew}>
                             <Heading size="4xl">Apex Quant</Heading>
                         </motion.Box>
-                        <motion.Box whileHover={{ skewY: 2 }}>
+                        <motion.Box whileHover={ySkew}>
                             <Heading size="xl" p={6}>A Quantitative Finance Club at UMD</Heading>
                         </motion.Box>
-                        <motion.Box whileHover={{ skewY: 2 }}>
+                        <motion.Box whileHover={ySkew}>
                             <Text fontSize="2xl" p={6}>
                                 We are a quantitative finance group at UMD consisting 
                                 of a diverse group of students. Our purpose is to research 
@@ -31,13 +33,13 @@ function HomePage() {
                         </motion.Box>
                     </Flex>
                     <Flex flex={1}>
-                        <motion.Box whileHover={{ skewY: 1.25 }}>
-                            <Image src="stockstock.png" borderRadius="full" alt="Stock photo of stocks"/>
+                        <motion.Box whileHover={imageSkew}>
+                            <Image src="images/stockstock.png" borderRadius="full" alt="Stock photo of stocks"/>
                         </motion.Box>
                     </Flex>
                 </Flex>
                 <Flex direction="row" justify="space-between" p={10}>
-                    <motion.Box whileHover={{ scaleY: 1.02 }}>
+                    <motion.Box whileHover={yScale}>
                         <Card bg="#4b7bec" variant="elevated" size="lg" direction="column" align="center">
                             <CardBody>
                                 <Text fontSize="3xl">22</Text>
@@ -45,7 +47,7 @@ function HomePage() {
                             </CardBody>
                         </Card>
                     </motion.Box>
-                    <motion.Box whileHover={{ scaleY: 1.02 }}>
+                    <motion.Box whileHover={yScale}>
                         <Card bg="#4b7bec" variant="elevated" size="lg" direction="column" align="center">
                             <CardBody>
                                 <Text fontSize="3xl">3</Text>
@@ -53,11 +55,11 @@ function HomePage() {
                             </CardBody>
                         </Card>
                     </motion.Box>
-                    <motion.Box whileHover={{ scaleY: 1.02 }}>
+                    <motion.Box whileHover={yScale}>
                         <Card bg="#4b7bec" variant="elevated" size="lg" direction="column" align="center">
                             <CardBody>
-                                <Text fontSize="3xl">X</Text>
-                                <Text fontSize="lg">Years since founding</Text>
+                                <Text fontSize="lg">Founded in</Text>
+                                <Text fontSize="3xl">2021</Text>
                             </CardBody>
                         </Card>
                     </motion.Box>
@@ -133,20 +135,10 @@ function HomePage() {
                         </Accordion>
                     </Flex>
                 </Flex>
-                <Flex justify="center" p={10}>
-                    <motion.Box whileHover={{ skewY: 1.25 }}>
-                        <Image src="neuralnet.png" borderRadius="full" alt="Stock photo of stocks"/>
+                <Flex justify="center" p={12}>
+                    <motion.Box whileHover={imageSkew}>
+                        <Image src="images/neuralnet.png" borderRadius="full" alt="Stock photo of stocks"/>
                     </motion.Box>
-                </Flex>
-                <Flex bg="#4b6584" direction="row" justify="space-between">
-                    <Flex flex={1} align="center" justify="center">
-                        <Text>Contact Info</Text>
-                    </Flex>
-                    <Image src="umd.png" maxHeight="250px" flex={2}/>
-                    <Image src="apexlogo.png" maxHeight="250px" flex={2}/>
-                    <Flex flex={1} align="center" justify="center">
-                        <Text>Apex Quant</Text>
-                    </Flex>
                 </Flex>
             </Flex>
         </ScaleFade>
