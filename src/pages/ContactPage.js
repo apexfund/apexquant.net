@@ -1,12 +1,12 @@
-import { Box } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import '../App.jsx';
 
 function ContactPage() {
 
     return (
-        <Box>
-            Contact
-        </Box>
+        <Flex>
+            
+        </Flex>
     )
 }
 

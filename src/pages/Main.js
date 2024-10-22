@@ -41,11 +41,11 @@ function Main() {
                         </VStack>
                     </Flex>
                     <motion.Box whileHover={image}>
-                        <Image src="images/umd.png" maxHeight="200px" maxWidth="200px" flex={1}/>
+                        <Image src="images/umd.png" maxHeight="150px" maxWidth="150px" flex={1}/>
                     </motion.Box>
                     <Spacer />
                     <motion.Box whileHover={image}>
-                        <Image src="images/apexlogo.png" maxHeight="200px" maxWidth="200px" flex={1}/>
+                        <Image src="images/apexlogo.png" maxHeight="150px" maxWidth="150px" flex={1}/>
                     </motion.Box>
                     <Flex flex={2} align="center" justify="center">
                         <Heading>Apex Quant</Heading>

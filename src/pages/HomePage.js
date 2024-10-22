@@ -64,7 +64,7 @@ function HomePage() {
                         </Card>
                     </motion.Box>
                 </Flex>
-                <Flex direction="column" p={20}>
+                <Flex direction="column">
                     <Flex justify="center">
                         <motion.Box whileHover={{ skewY: 2 }}>
                             <Heading size="4xl" p={16}>Our Organization</Heading>
