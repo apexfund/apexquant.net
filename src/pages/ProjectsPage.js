@@ -24,7 +24,7 @@ function ProjectCard(title, frontDescription, members, inDepthDescription) {
     return (
         <motion.Box whileHover={{ skewX: 1.1 }}>
             <Flex justify="center">
-                <Card bg="#4b7bec" width="50vw">
+            <Card bg="#45aaf2" width="50vw">
                     <CardHeader>
                         <Heading size="xl">{title}</Heading>
                     </CardHeader>

@@ -177,7 +177,7 @@ function MembersPage() {
 function MemberCard({img, name, year, major, linkedin}) {
     return (
         <motion.Box whileHover={{ skewY: 1.25 }}>
-            <Card width="30vw">
+            <Card bg="#45aaf2" width="30vw">
                 <CardBody>
                     <Flex direction="column">
                         <Image src={`members/${img}`} alt="member" p={2}/>

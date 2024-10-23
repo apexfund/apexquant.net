@@ -7,8 +7,12 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        backgroundColor: '#d1d8e0',
+        color: 'black',
+        backgroundColor: '#d1d8e0'
       },
+      '*': {
+        color: 'black',
+      }
     },
   },
   fonts: {

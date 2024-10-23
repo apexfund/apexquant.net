@@ -40,7 +40,7 @@ function HomePage() {
                 </Flex>
                 <Flex direction="row" justify="space-between" p={10}>
                     <motion.Box whileHover={yScale}>
-                        <Card bg="#4b7bec" variant="elevated" size="lg" direction="column" align="center">
+                        <Card bg="#45aaf2" variant="elevated" size="lg" direction="column" align="center">
                             <CardBody>
                                 <Text fontSize="3xl">22</Text>
                                 <Text fontSize="lg">Members</Text>
@@ -48,7 +48,7 @@ function HomePage() {
                         </Card>
                     </motion.Box>
                     <motion.Box whileHover={yScale}>
-                        <Card bg="#4b7bec" variant="elevated" size="lg" direction="column" align="center">
+                        <Card bg="#45aaf2" variant="elevated" size="lg" direction="column" align="center">
                             <CardBody>
                                 <Text fontSize="3xl">3</Text>
                                 <Text fontSize="lg">Teams</Text>
@@ -56,7 +56,7 @@ function HomePage() {
                         </Card>
                     </motion.Box>
                     <motion.Box whileHover={yScale}>
-                        <Card bg="#4b7bec" variant="elevated" size="lg" direction="column" align="center">
+                        <Card bg="#45aaf2" variant="elevated" size="lg" direction="column" align="center">
                             <CardBody>
                                 <Text fontSize="lg">Founded in</Text>
                                 <Text fontSize="3xl">2021</Text>
