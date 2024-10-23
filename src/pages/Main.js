@@ -28,7 +28,7 @@ function Main() {
                         <TabPanel><ContactPage /></TabPanel>
                     </TabPanels>
                 </Tabs>
-                <Flex bg="#4b7bec" direction="row" justify="space-between" p={4}>
+                <Flex as="footer" bg="#4b7bec" direction="row" justify="space-between" p={4}>
                     <Flex flex={2} align="center" justify="center">
                         <VStack spacing="24px">
                             <Text><PhoneIcon h="24px" w="24px"/>  +1 (240) 481-5975</Text>
