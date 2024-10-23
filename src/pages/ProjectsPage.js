@@ -1,22 +1,20 @@
-import { Flex, ScaleFade, Card, CardHeader, Heading, CardBody, Text } from '@chakra-ui/react';
+import { Flex, Card, CardHeader, Heading, CardBody, Text } from '@chakra-ui/react';
 import { motion } from "framer-motion";
 import '../App.jsx';
 
 function ProjectsPage() {
 
     return (
-        <ScaleFade in={true} initalScale={0}>
-            <Flex direction="column" gap={10}>
-                {ProjectCard("Project 1", "This is an example description of a project",
-                    "John Doe, Jane Doe, Joe Doe", "This is an example description of a project.")}
-                {ProjectCard("Project 2", "This is an example description of a project",
+        <Flex direction="column" gap={10}>
+            {ProjectCard("Project 1", "This is an example description of a project",
                 "John Doe, Jane Doe, Joe Doe", "This is an example description of a project.")}
-                {ProjectCard("Project 3", "This is an example description of a project",
-                "John Doe, Jane Doe, Joe Doe", "This is an example description of a project.")}
-                {ProjectCard("Project 4", "This is an example description of a project",
-                "John Doe, Jane Doe, Joe Doe", "This is an example description of a project.")}
-            </Flex>
-        </ScaleFade>
+            {ProjectCard("Project 2", "This is an example description of a project",
+            "John Doe, Jane Doe, Joe Doe", "This is an example description of a project.")}
+            {ProjectCard("Project 3", "This is an example description of a project",
+            "John Doe, Jane Doe, Joe Doe", "This is an example description of a project.")}
+            {ProjectCard("Project 4", "This is an example description of a project",
+            "John Doe, Jane Doe, Joe Doe", "This is an example description of a project.")}
+        </Flex>
     )
 }
 

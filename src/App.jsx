@@ -1,31 +1,24 @@
-import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import { createSystem, defaultConfig } from '@chakra-ui/react';
+import { Provider } from "@/components/ui/provider"
 import Main from './pages/Main.js';
 import '@fontsource/oxygen';
-import './App.css';
 
-const theme = extendTheme({
-  styles: {
-    global: {
-      body: {
-        color: 'black',
-        backgroundColor: '#d1d8e0'
-      },
-      '*': {
-        color: 'black',
+const system = createSystem(defaultConfig, {
+  theme: {
+    tokens: {
+      fonts: {
+        heading: { value: `'Oxygen', sans-serif` },
+        body: { value: `'Oxygen', sans-serif` },
       }
-    },
-  },
-  fonts: {
-    heading: `'Oxygen', sans-serif`,
-    body: `'Oxygen', sans-serif`,
-  },
+    }
+  }
 })
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
+    <Provider value={system}>
       <Main />
-    </ChakraProvider>
+    </Provider>
   );
 }
 
